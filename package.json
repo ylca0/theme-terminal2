@@ -1,7 +1,7 @@
 {
-    "name": "theme-terminal",
+    "name": "theme-terminal2",
     "private": true,
-    "version": "0.0.9",
+    "version": "0.1.0",
     "description": "A terminal like theme for Halo.",
     "scripts": {
         "dev": "vite build --watch",
@@ -13,17 +13,17 @@
         "halo",
         "halo-theme"
     ],
-    "homepage": "https://github.com/wan92hen/theme-terminal#readme",
+    "homepage": "https://github.com/ylca0/theme-terminal2#readme",
     "bugs": {
-        "url": "https://github.com/wan92hen/theme-terminal/issues"
+        "url": "https://github.com/ylca0/theme-terminal2/issues"
     },
     "author": {
-        "name": "BugKing",
-        "url": "https://github.com/wan92hen"
+        "name": "ylcao",
+        "url": "https://github.com/ylca0"
     },
     "license": "MIT",
     "repository": {
-        "url": "https://github.com/wan92hen/theme-terminal",
+        "url": "https://github.com/ylca0/theme-terminal2",
         "type": "git"
     },
     "devDependencies": {

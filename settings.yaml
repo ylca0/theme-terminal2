@@ -1,7 +1,7 @@
 apiVersion: v1alpha1
 kind: Setting
 metadata:
-  name: theme-terminal-setting
+  name: theme-terminal2-setting
 spec:
   forms:
     - group: basic
@@ -32,4 +32,9 @@ spec:
           name: gongan_link
           label: 公安备案跳转链接
           value: https://www.beian.gov.cn/
-
+    - group: copyright
+      label: 版权设置
+      formSchema:
+        - $formkit: text
+          name: author_text
+          label: 作者名
