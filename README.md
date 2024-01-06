@@ -8,12 +8,31 @@
 
 ## 配置
 
-1. 设置 Google Analytics
-   2. 后台-设置-代码注入-全局 head 标签，插入 Google tag
-2. 配置菜单
-   3. 后台-菜单-新建-链接地址
-   4. 可设置`tags,categories,archives`
-   5. 其他页面可先进入 后台-页面，添加后再添加菜单
+### 设置 Google Analytics
+
+后台-设置-代码注入-全局 head 标签，插入 Google tag
+
+### 配置菜单
+
+后台-菜单-新建-链接地址
+
+可设置 tags、categories、archives
+
+其他页面可先进入 后台-页面，添加后再添加菜单
+
+### 配置代码高亮
+
+后台-设置-代码注入-内容页 head 标签，填入以下内容：
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+```
+
+想使用其他配色，可在此页面选择：
+
+[https://cdnjs.com/libraries/highlight.js](https://cdnjs.com/libraries/highlight.js)
 
 ## 特性
 
