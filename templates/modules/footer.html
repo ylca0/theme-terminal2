@@ -1,12 +1,9 @@
 <footer class="footer">
   <div class="footer__inner">
     <div class="copyright">
-      <span
-        >© <span th:text="${#dates.year(#dates.createNow())}">2023</span> Powered by
-        <a href="https://halo.run/">Halo</a></span
-      >
-
-      <span>:: Theme <a href="https://github.com/wan92hen/theme-terminal">Terminal</a></span>
+      <span>© 2021-<span th:text="${#dates.year(T(java.util.Calendar).getInstance())}"></span> ylcao :: <a
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0 DEED</a>
+      </span>
     </div>
     <div class="beian">
       <span th:if="${not #strings.isEmpty(theme.config.beian.icp_text)}">
@@ -16,7 +13,7 @@
           th:href="${theme.config.beian.icp_link}"
           th:text="${theme.config.beian.icp_text}"
         ></a
-      ></span>
+        ></span>
       <span th:if="${not #strings.isEmpty(theme.config.beian.gongan_text)}">
         <img th:src="@{/assets/image/gongan.png}" style="display:inline-block; height: 1.2em;">
         <a
@@ -25,7 +22,7 @@
           th:href="${theme.config.beian.gongan_link}"
           th:text="${theme.config.beian.gongan_text}"
         ></a
-      ></span>
+        ></span>
     </div>
   </div>
 </footer>
