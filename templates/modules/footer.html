@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer__inner">
     <div class="copyright">
-      <span>© 2021-<span th:text="${#dates.year(T(java.util.Calendar).getInstance())}"></span> <span th:text="${theme.config.copyright.author_text}"></span> :: <a
+      <span>© 2021-<span th:text="${#dates.year(T(java.util.Calendar).getInstance())}"></span> <span th:text="${#strings.isEmpty(theme.config.copyright.author_text)}? ${site.title} : ${theme.config.copyright.author_text}"></span> :: <a
         href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0 DEED</a>
       </span>
     </div>
